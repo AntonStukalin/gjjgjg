@@ -1,0 +1,149 @@
+.header {
+    display: flex;
+    color: red;
+    width: 100%;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.article {
+    display: flex;
+    color: green;
+    /*width: 50%;*/
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    /*justify-content: center;*/
+    flex-direction: column;
+}
+
+.figure {
+    animation: new4 5s infinite alternate;
+    justify-content: center;
+}
+
+@keyframes new4 {
+    from {
+        /*margin-right: 0%;*/
+        /*width: 500px;*/
+        transform: rotate(0deg);
+    }
+    to {
+        /*margin-left: 100%;*/
+        /*width: 0px;*/
+        transform: rotate(360deg);
+    }
+}
+
+.body {
+    background: linear-gradient(45deg, royalblue, lightskyblue);
+    /*justify-content: space-between;*/
+    align-items: center;
+    /*display: flex;*/
+}
+
+.figcaption {
+    color:slateblue;
+    margin-left: 12%;
+    font-family: "Comic Sans MS";
+}
+
+.section_2 {
+    display: flex;
+    justify-content: center;
+}
+
+.section_3 {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+}
+
+.main {
+    display: flex;
+    color: red;
+    width: 100%;
+    justify-content: space-between;
+    flex-direction: column-reverse;
+}
+A:link{
+    color: chocolate;
+}
+A:visited{
+    color: deeppink;
+}
+A:Hover{
+    color: chartreuse;
+}
+A:active{
+    color: black;
+}
+table{
+    border-spacing: 0;
+    background: darkolivegreen;
+}
+td{
+    padding: 4px;
+}
+tr:hover{
+    background: gold;
+}
+tr:active{
+    background: springgreen;
+}
+.header::before{
+    content: url("http://dvkomsomolsk.ru/wp-content/uploads/2018/03/mammals-3225726_960_720-750x400.jpg");
+}
+.header::after{
+    content: url("https://i0.wp.com/blog.logrocket.com/wp-content/uploads/2019/06/csspseudoelements.png?fit=1240%2C700&ssl=1");
+}
+@media all and (min-width: 760px) and (max-width: 960px) {
+    .body{
+        background: linear-gradient(black,red);
+        align-items: flex-start;
+        justify-content: left;
+        font-size: 34px;
+        flex-direction: column;
+    }
+    .img{
+        width: 480px;
+        height: 240px;
+    }
+    div{
+        width: 500px;
+    }
+}
+@media all and (min-width: 0px) and (max-width: 760px) {
+    .body{
+        background: linear-gradient(white,blue);
+        align-items: flex-start;
+        justify-content: left;
+        font-size: 42px;
+        flex-direction: column;
+    }
+    .img{
+        width: 240px;
+        height: 120px;
+    }
+    div{
+        width: 250px;
+    }
+
+}
+@media all and (min-width: 960px) and (max-width: 1280px) {
+    .body{
+        background: linear-gradient(yellow,green);
+        align-items: center;
+        justify-content: center;
+        font-size: 24px;
+    }
+    .img{
+        width: 800px;
+        height: 600px;
+    }
+    div{
+        width: 1000px;                                        
+    }
+}
